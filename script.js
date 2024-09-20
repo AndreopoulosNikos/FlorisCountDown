@@ -1,10 +1,9 @@
 function updateElapsedTime() {
   const currentDate = new Date();
 
-  // Set the target date to yesterday
-  const targetDate = new Date();
+  // Set the target date to September 18, 2024
+  const targetDate = new Date(2024, 8, 18); // Month is 0-indexed, so 8 represents September
   targetDate.setHours(0, 0, 0, 0); // Set to midnight (start of the day)
-  targetDate.setDate(currentDate.getDate() - 1); // Go back to yesterday
 
   const difference = currentDate - targetDate;
 
